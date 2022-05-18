@@ -23,8 +23,11 @@ else if (!isNaN(eta) && isNaN(km)) {
     alert("Inserire un chilometraggio minimo (es: 0...1520)")
 }
 else {
-    if (etaLenght < 0 || kmLenght < 0) {
-        alert("Inserire valori numerici positivi dentro i campi Età e Km")
+    if (etaLenght <= 0 || kmLenght <= 0) {
+        alert("Inserire dei valori dentro i campi Età e Km")
+    }
+    else if (eta <= 0 || km <= 0) {
+        alert("Wow non sei ancora nato? O sai viaggiare per distanze negative o nulle? inserisci dei valori positivi e maggiori di 0 nei campi richiesti")
     }
     else if (km > 0 && km < 10) {
         alert("La tua tratta non esiste, inserire un chilometraggio più grande")
